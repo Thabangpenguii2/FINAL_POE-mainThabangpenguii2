@@ -61,3 +61,11 @@ W3Schools (2025) *HTML Tutorial*. Available at: https://www.w3schools.com/html/ 
 W3Schools (2025) *CSS Tutorial*. Available at: https://www.w3schools.com/css/ (Accessed: 27 May 2026).
 
 Pngtree (2025) *Flying soccer ball PNG image*. Available at: https://pngtree.com/ (Accessed: 27 May 2026).
+## part 3
+In Part 3 of this project, I used JavaScript to make my Peng’s Football T-Shirts website more interactive and functional. Before this, the website only used HTML and CSS, so it was static. JavaScript helped turn it into a more dynamic website with real user feedback.
+
+One of the main things I added was form validation on the enquiry/contact pages. This checks if the user filled in all required fields correctly before submitting the form. If something is missing or incorrect, an error message shows in red. If everything is correct, a success message is shown in green and the form resets automatically.
+
+I also added a shopping cart system on the products page. When a user clicks “Add to Cart”, the cart number increases and an alert message confirms the item was added. This makes the website feel more like a real online store.
+
+Overall, JavaScript improved the user experience by adding instant feedback and interactivity, making the website more functional and realistic compared to a static website.

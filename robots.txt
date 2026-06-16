@@ -1,3 +1,13 @@
+# Robots.txt for Peng Football T-Shirts website
+
 User-agent: *
 Allow: /
-Sitemap: https://example.com/sitemap.xml
+
+# Block admin or private folders (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /js/
+Disallow: /css/
+
+# Sitemap location (important for SEO)
+Sitemap: sitemap.xml
