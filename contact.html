@@ -1,96 +1,162 @@
+
 <!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+
 <html lang="en">
+<!-- Root element of the webpage with language set to English -->
+
 <head>
-  <title>Contact | WEDE5020 POE Website</title>
+    <!-- Contains metadata and page information -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Pengs Football T-Shirts</title>
+    <!-- Title shown on the browser tab -->
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TODO: Write a short page description for search engines.">
-  <meta name="keywords" content="TODO, replace, with, relevant, keywords">
-  <meta name="author" content="Student Name">
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Links the external CSS stylesheet -->
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-layout">
-      <div>
-        <p class="site-tag">WEDE5020 POE Template</p>
-        <strong>[Organisation Name]</strong>
-      </div>
+    <!-- Main content of the webpage -->
 
-<nav aria-label="Primary">
-  <ul class="nav-list">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services / Products</a></li>
-    <li><a href="enquiry.html">Enquiry</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+    <h2>Send us a Message</h2>
+    <!-- Heading for the contact form -->
 
-    </div>
-  </header>
+    <!-- Contact form starts here -->
+    <form action="#" method="post">
 
-    <main class="container">
-      <h1>Contact Us</h1>
-      <p>Add at least two locations and a contact form for general messages.</p>
+        <!-- First Name field -->
+        <div>
+            <label for="fname">First Name:</label>
 
-      <section class="card-grid">
-        <article class="card">
-          <h2>Location 1</h2>
-          <p>Address line 1<br>City, Province</p>
-          <iframe title="Map location 1" src="https://www.google.com/maps?q=Bloemfontein&output=embed" loading="lazy"></iframe>
-        </article>
-        <article class="card">
-          <h2>Location 2</h2>
-          <p>Address line 2<br>City, Province</p>
-          <iframe title="Map location 2" src="https://www.google.com/maps?q=Johannesburg&output=embed" loading="lazy"></iframe>
-        </article>
-      </section>
-
-      <form id="contactForm" action="mailto:replace@example.com" method="post" enctype="text/plain" novalidate>
-        <div class="form-group">
-          <label for="contactName">Full Name</label>
-          <input type="text" id="contactName" name="contactName" required minlength="3">
-          <small class="error-message"></small>
+            <input type="text" id="fname" name="fname" 
+                   placeholder="Enter name" required>
+            <!-- Input field for user's first name -->
         </div>
 
-        <div class="form-group">
-          <label for="contactEmail">Email Address</label>
-          <input type="email" id="contactEmail" name="contactEmail" required>
-          <small class="error-message"></small>
+        <br>
+
+        <!-- Cell Number field -->
+        <div>
+            <label for="cell">Cell Number:</label>
+
+            <input type="tel" id="cell" name="cell" 
+                   placeholder="+27 12 345 6789" required>
+            <!-- Input field for user's phone number -->
         </div>
 
-        <div class="form-group">
-          <label for="messageType">Message Type</label>
-          <select id="messageType" name="messageType" required>
-            <option value="">Select one</option>
-            <option value="general">General question</option>
-            <option value="support">Support</option>
-            <option value="compliment">Compliment</option>
-            <option value="complaint">Complaint</option>
-          </select>
-          <small class="error-message"></small>
+        <br>
+
+        <!-- Email field -->
+        <div>
+            <label for="email">Email:</label>
+
+            <input type="email" id="email" name="email" 
+                   placeholder="Enter your Email" required>
+            <!-- Input field for user's email -->
         </div>
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required minlength="20"></textarea>
-          <small class="error-message"></small>
+        <br>
+
+        <!-- Message text area -->
+        <div>
+            <label for="message">Enter your message:</label><br>
+
+            <textarea id="message" name="message" rows="4" cols="50" 
+            placeholder="Type your message here..."></textarea>
+            <!-- Text area where users type their message -->
         </div>
 
-        <button type="submit" class="button">Send Message</button>
-      </form>
-      <section id="contactResponse" class="response-box" aria-live="polite"></section>
-    </main>
-    <script defer src="js/contact.js"></script>
+        <br>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 [Organisation Name]. All rights reserved.</p>
-      <p>Student Number: [Add student number]</p>
-    </div>
-  </footer>
+        <!-- Form buttons -->
+        <input type="reset" value="Reset Form">
+        <!-- Button to clear the form -->
+
+        <input type="submit" value="Submit">
+        <!-- Button to submit the form -->
+
+    </form>
+    <!-- End of form -->
+
+    <!-- Company branch locations -->
+    <h3>Our Locations</h3>
+
+    <!-- Bloemfontein branch details -->
+    <h4>Bloemfontein Branch</h4>
+
+    <table border="1">
+        <!-- Table displaying branch contact details -->
+
+        <tr>
+            <td>Email</td>
+            <td>thabangkgobale0@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Phone</td>
+            <td>+27 66 525 6123</td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td>rosebank <br>Bloemfontein, Free State</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Embedded Google Map for Bloemfontein branch -->
+<iframe
+src="https://www.google.com/maps?q=Witbank+Mpumalanga+Ext+14&output=embed"
+width="400"
+height="300"
+class="map-frame"
+title="Map showing Witbank branch location">
+</iframe>
+
+    <br><br>
+
+    <!-- Witbank branch details -->
+    <h4>Witbank Branch</h4>
+
+    <table border="1">
+        <tr>
+            <td>Address</td>
+            <td>Ext 14<br>Witbank, Mpumalanga</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Embedded Google Map for Witbank branch -->
+<iframe
+src="https://www.google.com/maps?q=Witbank+Mpumalanga+Ext+14&output=embed"
+width="400"
+height="300"
+class="map-frame"
+title="Map showing Witbank branch location">
+</iframe>
+
+    <!-- Navigation menu -->
+    <ul>
+
+        <li><a href="Index.html">Home</a></li>
+        <!-- Link to Home page -->
+
+        <li><a href="about.html">About Us</a></li>
+        <!-- Link to About Us page -->
+
+        <li><a href="Products.html">Products</a></li>
+        <!-- Link to Products page -->
+
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <!-- Link to Enquiry page -->
+
+        <li><a href="Contact.html">Contact Us</a></li>
+        <!-- Link to Contact page -->
+
+    </ul>
+
 </body>
 </html>

@@ -1,117 +1,63 @@
-# WEDE5020 POE Website Project Template
+Pengs Football T-shirts
+ST10479494 
+This project aims to sell affordable Football T-shirts to the whole community and the world. we sell local football tshirts to the community. The deliverables are the website. 10 May 2026 resarch and discovery, 25 may 2026 Designing the website, 3 june 2026 creating content and seo, 16 June 2026 coding and development, 4 July 2026 coding and development, 14 August Testing and brush-ups, 14 September Launch and Maintenance.Responsive & Mobile-Friendly Design- make sure that the website works on all the devices. 
+I used html and css. 
+folder structure: index.html, about.html, products.html, enquiry.html, contact.html, style.css. Football kits:  football kit 1.png, football kits 2.png, football kits 3.png. Flying Football: football.png 
+i updated the html and added the maps 
+Refrences- Greatstack[2020] Available at:https://youtu.be/orBQesFBkXg[15 April 2026]
+           Learnwebcode[2010] Available at:https://youtu.be/Qerz5CQa2A8[16 April 2026]
+           coding with Soham Jain[2022] Available at: https://youtu.be/gWgzzVVcqfA[15 April 2026]
+           Coding Ninja[2022] Avaialable at:https://youtu.be/-Yw9gBHE60E[16 April 2026]
+           ChatGPT (2026) Explanation of HTML, CSS and JavaScript for a football T-shirt website. Available at: https://chat.openai.com (Accessed: 28 April 2026)
+           I have added comments to all my pages 
+           # Peng's Football T-Shirts
 
-> **Student:** Replace all placeholders in this document before submission.
+## Short Description
+Peng's Football T-Shirts is a responsive website created using HTML and CSS. The website sells football jerseys while providing information about the business, products, customer reviews, and contact details.
 
-## Student Information
-- **Student Name:** [Full Name]
-- **Student Number:** [Student Number]
-- **Module:** Web Development (Introduction) - WEDE5020
-- **Lecturer:** [Lecturer Name]
-- **Selected Organisation:** [Organisation Name]
-- **Repository URL:** [Paste GitHub repository link here]
-- **Deployed Website URL:** [Paste deployment link here in Part 3]
+## Part 2
 
-## Project Overview
-Write a brief overview of the chosen organisation and explain the purpose of the website.
+For Part 2, several improvements were made These updates include:
+- Added responsive web design using media queries
+- Improved navigation layout
+- Added featured product cards
+- Added customer review section
+- Added newsletter subscription section
+- Organized project files into folders
+- Added comments throughout the HTML code
+- Improved button styling and responsiveness
+## Responsive Evidence
 
-## Website Goals and Objectives
-- Goal 1
-- Goal 2
-- Goal 3
+The website was tested on different websites to see if its responsives.
 
-## Key Features and Functionality
-- Five or more web pages
-- Semantic HTML structure
-- Responsive CSS design
-- Enquiry and contact forms
-- JavaScript functionality
-- SEO elements (title, description, keywords, alt text, robots.txt, sitemap.xml)
-
-## Sitemap
-```text
-Home (index.html)
-├── About (about.html)
-├── Services / Products (services.html)
-├── Enquiry (enquiry.html)
-└── Contact (contact.html)
-```
-
-## File and Folder Structure
-```text
-.
-├── index.html
-├── about.html
-├── services.html
-├── enquiry.html
-├── contact.html
-├── robots.txt
-├── sitemap.xml
-├── css/
-│   └── style.css
-├── js/
-│   ├── main.js
-│   ├── enquiry.js
-│   └── contact.js
-├── images/
-├── docs/
-│   ├── wireframes/
-│   └── research/
-├── tests/
-└── README.md
-```
-
-## Part 1 Details
-### Proposal Summary
-- Proposal Option 1: [Organisation and summary]
-- Proposal Option 2: [Organisation and summary]
-- Approved Organisation: [Name]
-
-### Research Notes
-Summarise your sources, content plan, legal asset sourcing, and intended audience.
-
-### Timeline and Milestones
-| Milestone | Planned Date | Status |
-|---|---|---|
-| Proposal submission | [Date] | [Done / Pending] |
-| HTML structure complete | [Date] | [Done / Pending] |
-| CSS styling complete | [Date] | [Done / Pending] |
-| JavaScript complete | [Date] | [Done / Pending] |
-| Deployment complete | [Date] | [Done / Pending] |
-
-## Part 2 Details
-Describe CSS decisions, desktop layout, typography, colour palette, and responsiveness.
-
-## Part 3 Details
-Describe JavaScript features, SEO work, form validation, form processing, and deployment.
+Screenshots were added in:
+assets/screenshots/
+Files included:
+- mobile-home.png
+- tablet-home.png
+- desktop-home.png
 
 ## Changelog
-Use reverse chronological order.
 
-### 2026-00-00
-- Initial project structure created.
-- Added starter HTML pages.
-- Linked external stylesheet and JavaScript files.
+### Version 2 Updates
 
-## Screenshots
-### Desktop
-Add screenshots here.
-
-### Tablet
-Add screenshots here.
-
-### Mobile
-Add screenshots here.
+- Added responsive navigation menu
+- Added media queries for mobile, tablet, and desktop
+- Improved typography and spacing
+- Styled buttons with hover effects
+- Added footer section
+- Added About Us section
+- Organized images into the assets folder
+- Added README documentation
 
 ## References
-> Use the required institutional referencing style consistently.
 
-1. [Reference 1]
-2. [Reference 2]
-3. [Reference 3]
+Mozilla Developer Network (2025) *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/ (Accessed: 27 May 2026).
 
-## AI Declaration (If used)
-Document all AI assistance according to institutional policy.
+Mozilla Developer Network (2025) *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/ (Accessed: 27 May 2026).
 
-## Autograding Feedback
-This project may be checked automatically in GitHub Classroom on every push.
-Use the Actions or autograding results to see which requirements still need improvement.
+W3Schools (2025) *HTML Tutorial*. Available at: https://www.w3schools.com/html/ (Accessed: 27 May 2026).
+
+W3Schools (2025) *CSS Tutorial*. Available at: https://www.w3schools.com/css/ (Accessed: 27 May 2026).
+
+Pngtree (2025) *Flying soccer ball PNG image*. Available at: https://pngtree.com/ (Accessed: 27 May 2026).

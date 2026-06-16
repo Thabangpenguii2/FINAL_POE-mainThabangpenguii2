@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<!-- Title shown on browser tab -->
+<title>Pengs Football Tshirts Products</title>
+
+<!-- Makes website responsive on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Link to external CSS file -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Main page heading -->
+<h1>Our Football T-Shirts</h1>
+
+<!-- Container holding all products -->
+<div class="products">
+
+<!-- Product card 1 -->
+<div class="product-card">
+
+<h2>Sky Blues FC</h2>
+
+<!-- Product price -->
+<p>R250</p>
+
+<!-- Product image -->
+<img src="assets/Football kit 3.png" width="200" alt="Sky Blues FC shirt">
+
+<!-- Product description -->
+<p>The Sky Blues FC Home kit for the 25/26 season</p>
+
+<!-- Size selection -->
+<label for="size1">Select Size:</label>
+
+<select id="size1">
+<option>Select size</option>
+<option>XXL</option>
+<option>XL</option>
+<option>L</option>
+<option>M</option>
+<option>S</option>
+</select>
+
+<br><br>
+
+<!-- Quantity input -->
+<label for="qty1">Quantity:</label>
+
+<input type="number" id="qty1" value="1">
+
+<!-- Add product to cart button -->
+<button onclick="addToCart()">Add to Cart</button>
+
+</div>
+
+
+<!-- Product card 2 -->
+<div class="product-card">
+
+<h2>Tiki Takka FC</h2>
+
+<p>R250</p>
+
+<img src="assets/footbal shirt 1.png" width="200" alt="Tiki Takka FC shirt">
+
+<p>The Tiki Takka FC Football T-shirt for the 25/26 season</p>
+
+<label for="size2">Select Size:</label>
+
+<select id="size2">
+<option>Select size</option>
+<option>XXL</option>
+<option>XL</option>
+<option>L</option>
+<option>M</option>
+<option>S</option>
+</select>
+
+<br><br>
+
+<label for="qty2">Quantity:</label>
+
+<input type="number" id="qty2" value="1">
+
+<button onclick="addToCart()">Add to Cart</button>
+
+</div>
+
+
+<!-- Product card 3 -->
+<div class="product-card">
+
+<h2>Royal Ladybug FC</h2>
+
+<p>R250</p>
+
+<img src="assets/football kit 2.png" width="200" alt="Royal Ladybug FC shirt">
+
+<p>The Royal Ladybug FC Football T-shirt for the 25/26 season</p>
+
+<label for="size3">Select Size:</label>
+
+<select id="size3">
+<option>Select size</option>
+<option>XXL</option>
+<option>XL</option>
+<option>L</option>
+<option>M</option>
+<option>S</option>
+</select>
+
+<br><br>
+
+<label for="qty3">Quantity:</label>
+
+<input type="number" id="qty3" value="1">
+
+<button onclick="addToCart()">Add to Cart</button>
+
+</div>
+
+
+<!-- Product card 4 -->
+<div class="product-card">
+
+<h2>Green Mambas FC</h2>
+
+<p>R250</p>
+
+<img src="assets/football kits 4.png" width="200" alt="Green Mambas FC shirt">
+
+<p>The Green Mambas FC T-shirt for the 25/26 season</p>
+
+<label for="size4">Select Size:</label>
+
+<select id="size4">
+<option>Select size</option>
+<option>XXL</option>
+<option>XL</option>
+<option>L</option>
+<option>M</option>
+<option>S</option>
+</select>
+
+<br><br>
+
+<label for="qty4">Quantity:</label>
+
+<input type="number" id="qty4" value="1">
+
+<button onclick="addToCart()">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Shopping cart display -->
+<h3>Cart: <span id="cart-count">0</span> items 🛒</h3>
+
+<!-- Navigation menu -->
+<ul>
+
+<li><a href="Index.html">Home</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="Products.html">Products</a></li>
+
+<li><a href="Enquiry.html">Enquiry</a></li>
+
+<li><a href="Contact.html">Contact Us</a></li>
+
+</ul>
+
+<script>
+
+// Variable storing number of items in cart
+let cart = 0;
+
+// Function to increase cart total
+function addToCart(){
+
+cart++;
+
+// Update cart display
+document.getElementById("cart-count").innerText = cart;
+
+// Show confirmation message
+alert("Item added to cart ⚽");
+
+}
+
+</script>
+
+</body>
+</html>
