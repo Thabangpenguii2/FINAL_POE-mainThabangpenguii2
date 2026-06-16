@@ -1,34 +1,46 @@
-const enquiryForm = document.querySelector('#enquiryForm');
-const enquiryResponse = document.querySelector('#enquiryResponse');
+console.log("JS is working");
 
-function setError(field, message) {
-  const group = field.closest('.form-group');
-  const small = group.querySelector('.error-message');
-  small.textContent = message;
-}
-function clearError(field) {
-  const group = field.closest('.form-group');
-  const small = group.querySelector('.error-message');
-  small.textContent = '';
-}
-if (enquiryForm) {
-  enquiryForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    let valid = true;
-    [...enquiryForm.elements].forEach((field) => {
-      if (field.tagName !== 'BUTTON' && field.willValidate && !field.checkValidity()) {
-        valid = false;
-        setError(field, field.validationMessage);
-      } else if (field.tagName !== 'BUTTON') {
-        clearError(field);
-      }
+const form = document.getElementById("contact-form");
+
+if (form) {
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const fname = document.getElementById("fname").value.trim();
+        const cell = document.getElementById("cell").value.trim();
+        const email = document.getElementById("email").value.trim();
+
+        const messageBox = document.getElementById("formMessage");
+
+        // Safety check (in case element is missing)
+        if (!messageBox) {
+            console.error("formMessage element not found in HTML");
+            return;
+        }
+
+        // Check empty fields
+        if (fname === "" || cell === "" || email === "") {
+            messageBox.textContent = "❌ Please fill in all fields.";
+            messageBox.style.color = "red";
+            return;
+        }
+
+        // Email validation (basic but better than before)
+        if (!email.includes("@") || !email.includes(".")) {
+            messageBox.textContent = "❌ Please enter a valid email address.";
+            messageBox.style.color = "red";
+            return;
+        }
+
+        // Success message
+        messageBox.textContent = "✔ Your enquiry has been submitted successfully!";
+        messageBox.style.color = "green";
+
+        // Reset form
+        form.reset();
     });
-    if (valid) {
-      const type = document.querySelector('#enquiryType').value || 'general';
-      enquiryResponse.textContent = `Thank you for your ${type} enquiry. We will contact you soon.`;
-      enquiryForm.reset();
-    } else {
-      enquiryResponse.textContent = 'Please correct the highlighted fields before submitting.';
-    }
-  });
+
+} else {
+    console.error("Form with id 'contact-form' not found");
 }

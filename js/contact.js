@@ -1,32 +1,48 @@
-const contactForm = document.querySelector('#contactForm');
-const contactResponse = document.querySelector('#contactResponse');
+// Contact form validation
 
-function showFieldError(field, message) {
-  const group = field.closest('.form-group');
-  const small = group.querySelector('.error-message');
-  small.textContent = message;
-}
-function resetFieldError(field) {
-  const group = field.closest('.form-group');
-  const small = group.querySelector('.error-message');
-  small.textContent = '';
-}
-if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
-    let valid = true;
-    [...contactForm.elements].forEach((field) => {
-      if (field.tagName !== 'BUTTON' && field.willValidate && !field.checkValidity()) {
-        valid = false;
-        showFieldError(field, field.validationMessage);
-      } else if (field.tagName !== 'BUTTON') {
-        resetFieldError(field);
-      }
-    });
-    if (!valid) {
-      event.preventDefault();
-      contactResponse.textContent = 'Please correct the highlighted fields before sending the message.';
-      return;
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const fname = document.getElementById("fname").value.trim();
+    const cell = document.getElementById("cell").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const formMessage = document.getElementById("formMessage");
+
+    // Check empty fields
+    if (fname === "" || cell === "" || email === "") {
+
+        formMessage.textContent = "Please fill in all required fields.";
+        formMessage.style.color = "red";
+        return;
     }
-    contactResponse.textContent = 'Your email app should open now. If it does not, check your device email settings.';
-  });
-}
+
+    // Validate phone number
+    const phonePattern = /^[+0-9\s]+$/;
+
+    if (!phonePattern.test(cell)) {
+
+        formMessage.textContent = "Invalid cell number.";
+        formMessage.style.color = "red";
+        return;
+    }
+
+    // Validate email
+    if (!email.includes("@")) {
+
+        formMessage.textContent = "Invalid email address.";
+        formMessage.style.color = "red";
+        return;
+    }
+
+    // Success
+    formMessage.textContent = "Message sent successfully!";
+    formMessage.style.color = "green";
+
+    form.reset();
+
+});
