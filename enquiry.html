@@ -2,28 +2,37 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
+    <!-- Mobile friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Enquiry for Peng Football T-Shirts</title>
+    <!-- SEO description -->
+    <meta name="description" content="Send an enquiry to Peng Football T-Shirts. Contact us for custom football shirts, orders, and support in South Africa.">
 
+    <!-- SEO title -->
+    <title>Enquiry Form | Peng Football T-Shirts South Africa</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+    <!-- Main heading -->
     <h1>Enquiry Form</h1>
 
-    <!-- Message displayed here (important placement) -->
-    <p id="formMessage"></p>
+    <h2>Send us a Message</h2>
 
-    <!-- Form starts here -->
-    <form id="contact-form">
+    <!-- Enquiry form -->
+    <form id="contact-form" action="#" method="post">
 
         <!-- First Name -->
         <div>
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Enter name" required>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
         </div>
 
         <br>
@@ -52,26 +61,31 @@
 
         <br>
 
+        <!-- Message output -->
+        <p id="formMessage"></p>
+
         <!-- Buttons -->
-        <div>
-            <input type="reset" value="Clear Form">
-            <input type="submit" value="Submit">
-        </div>
+        <input type="reset" value="Clear Form">
+        <input type="submit" value="Submit">
 
     </form>
 
     <br>
 
-    <!-- Navigation menu -->
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="Products.html">Products</a></li>
-        <li><a href="Enquiry.html">Enquiry</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-    </ul>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- JavaScript -->
     <script src="js/enquiry.js"></script>
 
 </body>
+
 </html>
