@@ -1,35 +1,38 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Contains metadata and page information -->
+
     <meta charset="UTF-8">
+
+    <!-- Mobile friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Pengs Football T-Shirts</title>
+    <!-- SEO: Description -->
+    <meta name="description" content="Contact Peng Football T-Shirts for enquiries, support, and store locations in South Africa. Visit our Bloemfontein and Witbank branches or send us a message online.">
 
-    <!-- Links the external CSS stylesheet -->
+    <!-- SEO: Title -->
+    <title>Contact Peng Football T-Shirts | Enquiries & Support South Africa</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+    <!-- Main heading (SEO important) -->
+    <h1>Contact Peng Football T-Shirts</h1>
+
+    <!-- Contact form section -->
     <h2>Send us a Message</h2>
 
-    <!-- Contact form -->
     <form id="contactForm" action="#" method="post">
 
         <!-- First Name -->
         <div>
             <label for="fname">First Name:</label>
-
-            <input
-                type="text"
-                id="fname"
-                name="fname"
-                placeholder="Enter name"
-                required>
+            <input type="text" id="fname" name="fname" placeholder="Enter name" required>
         </div>
 
         <br>
@@ -37,13 +40,7 @@
         <!-- Cell Number -->
         <div>
             <label for="cell">Cell Number:</label>
-
-            <input
-                type="tel"
-                id="cell"
-                name="cell"
-                placeholder="+27 12 345 6789"
-                required>
+            <input type="tel" id="cell" name="cell" placeholder="+27 12 345 6789" required>
         </div>
 
         <br>
@@ -51,13 +48,7 @@
         <!-- Email -->
         <div>
             <label for="email">Email:</label>
-
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your Email"
-                required>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
         </div>
 
         <br>
@@ -66,35 +57,28 @@
         <div>
             <label for="message">Enter your message:</label>
             <br>
-
-            <textarea
-                id="message"
-                name="message"
-                rows="4"
-                cols="50"
-                placeholder="Type your message here..."></textarea>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea>
         </div>
 
         <br>
 
-        <!-- Validation or status message -->
+        <!-- Message output -->
         <p id="formMessage"></p>
 
         <!-- Buttons -->
         <input type="reset" value="Reset Form">
-
         <input type="submit" value="Submit">
 
     </form>
 
     <br>
 
-    <h3>Our Locations</h3>
+    <!-- Locations -->
+    <h2>Our Locations</h2>
 
-    <!-- Bloemfontein Branch -->
-    <h4>Bloemfontein Branch</h4>
+    <h3>Bloemfontein Branch</h3>
 
-    <table border="1">
+    <table class="contact-table">
 
         <tr>
             <td>Email</td>
@@ -117,18 +101,15 @@
 
     <iframe
         src="https://www.google.com/maps?q=Bloemfontein&output=embed"
-        width="400"
-        height="300"
         class="map-frame"
-        title="Map showing Bloemfontein branch location">
+        title="Bloemfontein branch location">
     </iframe>
 
     <br><br>
 
-    <!-- Witbank Branch -->
-    <h4>Witbank Branch</h4>
+    <h3>Witbank Branch</h3>
 
-    <table border="1">
+    <table class="contact-table">
 
         <tr>
             <td>Address</td>
@@ -141,33 +122,26 @@
 
     <iframe
         src="https://www.google.com/maps?q=Witbank+Mpumalanga+Ext+14&output=embed"
-        width="400"
-        height="300"
         class="map-frame"
-        title="Map showing Witbank branch location">
+        title="Witbank branch location">
     </iframe>
 
     <br><br>
 
     <!-- Navigation -->
-    <ul>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <li><a href="Index.html">Home</a></li>
-
-        <li><a href="about.html">About Us</a></li>
-
-        <li><a href="Products.html">Products</a></li>
-
-        <li><a href="Enquiry.html">Enquiry</a></li>
-
-        <li><a href="Contact.html">Contact Us</a></li>
-
-    </ul>
-
-    <!-- Link JavaScript file -->
+    <!-- JS -->
     <script src="js/contact.js"></script>
 
 </body>
 
 </html>
-```
