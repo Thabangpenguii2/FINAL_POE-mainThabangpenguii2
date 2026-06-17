@@ -69,3 +69,7 @@ One of the main things I added was form validation on the enquiry/contact pages.
 I also added a shopping cart system on the products page. When a user clicks “Add to Cart”, the cart number increases and an alert message confirms the item was added. This makes the website feel more like a real online store.
 
 Overall, JavaScript improved the user experience by adding instant feedback and interactivity, making the website more functional and realistic compared to a static website.
+refrences
+Google Developers (2026) Web Fundamentals: Responsive Web Design Basics. Available at: https://web.dev/responsive-web-design-basics/ (Accessed: 17 June 2026)
+MDN Web Docs (2026) Responsive design. Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design (Accessed: 17 June 2026).
+Mozilla Developer Network (MDN Web Docs) (2026) CSS: Cascading Style Sheets. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 17 June 2026).
