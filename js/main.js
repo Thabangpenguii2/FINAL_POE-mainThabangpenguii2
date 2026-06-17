@@ -70,3 +70,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+const subscribeBtn = document.getElementById("subscribeBtn");
+
+if (subscribeBtn) {
+
+    subscribeBtn.addEventListener("click", function () {
+
+        const email = document.getElementById("newsletterEmail").value.trim();
+
+        const message = document.getElementById("subscribeMessage");
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (email === "") {
+
+            message.textContent = "❌ Please enter your email.";
+
+            message.style.color = "red";
+
+            return;
+        }
+
+        if (!emailPattern.test(email)) {
+
+            message.textContent = "❌ Please enter a valid email.";
+
+            message.style.color = "red";
+
+            return;
+        }
+
+        message.textContent = "✔ Thank you for subscribing!";
+
+        message.style.color = "green";
+
+        document.getElementById("newsletterEmail").value = "";
+
+    });
+
+}
