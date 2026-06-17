@@ -3,18 +3,14 @@
 
 <head>
 <meta charset="UTF-8">
-
 <title>Pengs Football Tshirts Products</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-<!-- Navigation menu -->
+<!-- Navigation -->
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -34,15 +30,12 @@
         <h2>Sky Blues FC</h2>
         <p>R250</p>
 
-      <img src="images/assets/football-kit-3.png"
-                 width="200"
-                 alt="Sky blue fc home football kit 25/26 season">
+        <img src="images/assets/football-kit-3.png" width="200" alt="Sky Blues FC shirt">
 
         <p>The Sky Blues FC Home kit for the 25/26 season</p>
 
         <label for="size1">Select Size:</label>
-        <select id="size1">
-            <option>Select size</option>
+        <select id="size1" name="size1">
             <option>XXL</option>
             <option>XL</option>
             <option>L</option>
@@ -52,8 +45,9 @@
 
         <br><br>
 
-        <label for="qty1">Quantity:</label>
-        <input type="number" id="qty1" value="1">
+        <label>Quantity:</label>
+      <label for="qty">Quantity:</label>
+<input type="number" id="qty" name="qty" value="1" min="1">
 
         <button onclick="addToCart()">Add to Cart</button>
     </div>
@@ -62,16 +56,13 @@
     <div class="product-card">
         <h2>Tiki Takka FC</h2>
         <p>R250</p>
-     
-        <img src="images/assets/football-kit-1.png"
-                 width="200"
-                 alt="Tiki Takka Fc Home Football kit 25/26 season">
+
+        <img src="images/assets/football-kit-1.png" width="200" alt="Tiki Takka FC shirt">
 
         <p>The Tiki Takka FC Football T-shirt for the 25/26 season</p>
 
-        <label for="size2">Select Size:</label>
-        <select id="size2">
-            <option>Select size</option>
+   <label for="size2">Select Size:</label>
+        <select id="size2" name="size2">
             <option>XXL</option>
             <option>XL</option>
             <option>L</option>
@@ -81,8 +72,9 @@
 
         <br><br>
 
-        <label for="qty2">Quantity:</label>
-        <input type="number" id="qty2" value="1">
+        <label>Quantity:</label>
+       <label for="qty">Quantity:</label>
+<input type="number" id="qty" name="qty" value="1" min="1">
 
         <button onclick="addToCart()">Add to Cart</button>
     </div>
@@ -92,15 +84,12 @@
         <h2>Royal Ladybug FC</h2>
         <p>R250</p>
 
-            <img src="images/assets/football-kit-2.png"
-                 width="200"
-                 alt="Tiki Takka Fc Home Football kit 25/26 season">
+        <img src="images/assets/football-kit-2.png" width="200" alt="Royal Ladybug FC shirt">
 
         <p>The Royal Ladybug FC Football T-shirt for the 25/26 season</p>
 
-        <label for="size3">Select Size:</label>
-        <select id="size3">
-            <option>Select size</option>
+   <label for="size3">Select Size:</label>
+        <select id="size3" name="size3">
             <option>XXL</option>
             <option>XL</option>
             <option>L</option>
@@ -110,8 +99,9 @@
 
         <br><br>
 
-        <label for="qty3">Quantity:</label>
-        <input type="number" id="qty3" value="1">
+      <label>Quantity:</label>
+        <label for="qty">Quantity:</label>
+<input type="number" id="qty" name="qty" value="1" min="1">
 
         <button onclick="addToCart()">Add to Cart</button>
     </div>
@@ -121,16 +111,12 @@
         <h2>Green Mambas FC</h2>
         <p>R250</p>
 
-             
-            <img src="images/assets/football-kits-4.png"
-                 width="200"
-                 alt="Tiki Takka Fc Home Football kit 25/26 season">
+        <img src="images/assets/football-kits-4.png" width="200" alt="Green Mambas FC shirt">
 
         <p>The Green Mambas FC T-shirt for the 25/26 season</p>
 
-        <label for="size4">Select Size:</label>
-        <select id="size4">
-            <option>Select size</option>
+ <label for="size4">Select Size:</label>
+        <select id="size4" name="size4">
             <option>XXL</option>
             <option>XL</option>
             <option>L</option>
@@ -140,17 +126,22 @@
 
         <br><br>
 
-        <label for="qty4">Quantity:</label>
-        <input type="number" id="qty4" value="1">
+        <label>Quantity:</label>
+        <label for="inputID">Text</label>
+<input id="inputID"> type="number" value="1">
 
         <button onclick="addToCart()">Add to Cart</button>
     </div>
 
 </div>
 
-<!-- Cart -->
+<!-- CART -->
 <h3>Cart: <span id="cart-count">0</span> items 🛒</h3>
 
+<!-- CHECKOUT -->
+<button onclick="checkout()">Checkout</button>
+
+<!-- JAVASCRIPT -->
 <script>
 let cart = 0;
 
@@ -159,9 +150,21 @@ function addToCart() {
     document.getElementById("cart-count").innerText = cart;
     alert("Item added to cart ⚽");
 }
-</script>
 
-<script src="js/main.js"></script>
+function checkout() {
+
+    if (cart === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    let message = "Hi, I want to order " + cart + " football item(s) from Peng Football T-Shirts.";
+
+    let url = "https://wa.me/27665256123?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
