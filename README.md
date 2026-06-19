@@ -73,3 +73,4 @@ refrences
 Google Developers (2026) Web Fundamentals: Responsive Web Design Basics. Available at: https://web.dev/responsive-web-design-basics/ (Accessed: 17 June 2026)
 MDN Web Docs (2026) Responsive design. Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design (Accessed: 17 June 2026).
 Mozilla Developer Network (MDN Web Docs) (2026) CSS: Cascading Style Sheets. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 17 June 2026).
+the final deployed website link: https://thabangpenguii2.github.io/FINAL_POE-mainThabangpenguii2/
